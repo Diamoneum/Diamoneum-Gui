@@ -72,11 +72,11 @@ int main(int argc, char* argv[]) {
   }
 
   //Create registry entries for URL execution
-  QSettings qwertycoinKey("HKEY_CLASSES_ROOT\\qwertycoin", QSettings::NativeFormat);
-  qwertycoinKey.setValue(".", "Qwertycoin Wallet");
-  qwertycoinKey.setValue("URL Protocol", "");
-  QSettings qwertycoinOpenKey("HKEY_CLASSES_ROOT\\qwertycoin\\shell\\open\\command", QSettings::NativeFormat);
-  qwertycoinOpenKey.setValue(".", "\"" + QCoreApplication::applicationFilePath().replace("/", "\\") + "\" \"%1\"");
+  QSettings diamoneumKey("HKEY_CLASSES_ROOT\\diamoneum", QSettings::NativeFormat);
+  diamoneumKey.setValue(".", "Diamoneum Wallet");
+  diamoneumKey.setValue("URL Protocol", "");
+  QSettings diamoneumOpenKey("HKEY_CLASSES_ROOT\\diamoneum\\shell\\open\\command", QSettings::NativeFormat);
+  diamoneumOpenKey.setValue(".", "\"" + QCoreApplication::applicationFilePath().replace("/", "\\") + "\" \"%1\"");
 #endif
 
 #if defined(Q_OS_LINUX)
@@ -84,7 +84,7 @@ int main(int argc, char* argv[]) {
   QProcess exec;
 
   //as root
-  args << "-c" << "printf '[Desktop Entry]\\nName = Qwertycoin URL Handler\\nGenericName = Qwertycoin\\nComment = Handle URL Sheme qwertycoin://\\nExec = " + QCoreApplication::applicationFilePath() + " %%u\\nTerminal = false\\nType = Application\\nMimeType = x-scheme-handler/qwertycoin;\\nIcon = Qwertycoin-Wallet' | tee /usr/share/applications/qwertycoin-handler.desktop";
+  args << "-c" << "printf '[Desktop Entry]\\nName = Diamoneum URL Handler\\nGenericName = Diamoneum\\nComment = Handle URL Sheme diamoneum://\\nExec = " + QCoreApplication::applicationFilePath() + " %%u\\nTerminal = false\\nType = Application\\nMimeType = x-scheme-handler/diamoneum;\\nIcon = Diamoneum-Wallet' | tee /usr/share/applications/diamoneum-handler.desktop";
   exec.start("/bin/sh", args);
   exec.waitForFinished();
 

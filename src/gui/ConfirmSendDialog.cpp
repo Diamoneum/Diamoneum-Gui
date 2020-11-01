@@ -18,7 +18,7 @@ ConfirmSendDialog::~ConfirmSendDialog() {
 }
 
 void ConfirmSendDialog::showPaymentDetails(quint64 _total) {
-    setWindowTitle(QString(tr("Confirm sending %1 QWC")).arg(CurrencyAdapter::instance().formatAmount(_total)));
+    setWindowTitle(QString(tr("Confirm sending %1 DIAM")).arg(CurrencyAdapter::instance().formatAmount(_total)));
     QString amountText = m_ui->m_confirmLabel->text();
     m_ui->m_confirmLabel->setText(amountText.arg(CurrencyAdapter::instance().formatAmount(_total)));
 }
@@ -32,7 +32,7 @@ void ConfirmSendDialog::confirmNoPaymentId() {
 }
 
 void ConfirmSendDialog::showConfirmDonation(quint64 _donation) {
-    m_ui->m_confirmDonationLabel->setText(QString(tr("<html><head/><body><p>Are you sure you want donate <strong>%1 QWC</strong>?</p></body></html>")).arg(CurrencyAdapter::instance().formatAmount(_donation)));
+    m_ui->m_confirmDonationLabel->setText(QString(tr("<html><head/><body><p>Are you sure you want donate <strong>%1 DIAM</strong>?</p></body></html>")).arg(CurrencyAdapter::instance().formatAmount(_donation)));
 }
 
 }

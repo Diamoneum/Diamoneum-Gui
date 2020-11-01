@@ -264,16 +264,16 @@ void SendFrame::openUriClicked() {
 
 void SendFrame::parsePaymentRequest(QString _request) {
     MainWindow::instance().showNormal();
-    if(_request.startsWith("qwertycoin://", Qt::CaseInsensitive))
+    if(_request.startsWith("diamoneum://", Qt::CaseInsensitive))
     {
-       _request.replace(0, 13, "qwertycoin:");
+       _request.replace(0, 13, "diamoneum:");
     }
-    if(!_request.startsWith("qwertycoin:", Qt::CaseInsensitive)) {
-      QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Payment request should start with qwertycoin:"), QtCriticalMsg));
+    if(!_request.startsWith("diamoneum:", Qt::CaseInsensitive)) {
+      QCoreApplication::postEvent(&MainWindow::instance(), new ShowMessageEvent(tr("Payment request should start with diamoneum:"), QtCriticalMsg));
       return;
     }
 
-    if(_request.startsWith("qwertycoin:", Qt::CaseInsensitive))
+    if(_request.startsWith("diamoneum:", Qt::CaseInsensitive))
     {
       _request.remove(0, 11);
     }
@@ -345,7 +345,7 @@ void SendFrame::sendClicked() {
       // Dev donation
       if (m_ui->donateCheckBox->isChecked()) {
           CryptoNote::WalletLegacyTransfer walletTransfer;
-          walletTransfer.address = "QWC1RALGaP5U8BLJskYR2YVSjr3DQEEuS5xghbtX2mm134YVXgS4RJHZGkeBvXf4BRFLWkv4zHGJ267S9pjwvVt63xwkdYPCwF";
+          walletTransfer.address = "diamoxEdqZsQ63PU1MEryiDQursyCbKiQf7YQxfvCPx8JU9zG4mwziNSS3hbkgqMaNV7hyWQ6mV5igbNZRyJLykE4UGMrTY5gS";
           walletTransfer.amount = CurrencyAdapter::instance().parseAmount(m_ui->m_donateSpin->cleanText());
           walletTransfers.push_back(walletTransfer);
       }

@@ -175,7 +175,7 @@ if(APPLE)
     list(APPEND TARGET_SRC "${CMAKE_CURRENT_LIST_DIR}/gui/macdockiconhandler.h")
     list(APPEND TARGET_SRC "${CMAKE_CURRENT_LIST_DIR}/gui/macdockiconhandler.mm")
 elseif(WIN32)
-    list(APPEND TARGET_SRC "${CMAKE_CURRENT_LIST_DIR}/qwertycoinwallet.rc")
+    list(APPEND TARGET_SRC "${CMAKE_CURRENT_LIST_DIR}/diamoneumwallet.rc")
 endif()
 
 # Include directories
@@ -257,8 +257,8 @@ target_compile_definitions(${TARGET_NAME} ${TARGET_COMPILE_DEFS})
 if(PROJECT_OS_LINUX)
     set_target_properties(
         ${TARGET_NAME}
-        PROPERTIES
-            OUTPUT_NAME "qwertycoin-gui"
+        PROPERTIES	
+            OUTPUT_NAME "Diamoneum-Wallet"
             BUILD_WITH_INSTALL_RPATH TRUE
             INSTALL_RPATH "$OIGIN/../lib"
     )
@@ -281,19 +281,19 @@ if(PROJECT_OS_LINUX OR PROJECT_OS_POSIX) # Linux
     endforeach()
 
     install(
-        FILES "${CMAKE_CURRENT_LIST_DIR}/qwertycoinwallet.sh"
+        FILES "${CMAKE_CURRENT_LIST_DIR}/diamoneumwallet.sh"
         DESTINATION bin
         PERMISSIONS OWNER_EXECUTE OWNER_WRITE OWNER_READ GROUP_EXECUTE GROUP_READ WORLD_EXECUTE WORLD_READ
-        RENAME qwertycoin-gui
+        RENAME Diamoneum-Wallet
     )
 
     install(
-        FILES "${CMAKE_CURRENT_LIST_DIR}/qwertycoinwallet.desktop"
+        FILES "${CMAKE_CURRENT_LIST_DIR}/diamoneumwallet.desktop"
         DESTINATION share/applications
     )
 
     install(
-        FILES "${CMAKE_CURRENT_LIST_DIR}/images/qwertycoinz.png"
+        FILES "${CMAKE_CURRENT_LIST_DIR}/images/diamoneumz.png"
         DESTINATION icons/hicolor/256x256/apps
     )
 
@@ -307,7 +307,7 @@ elseif(PROJECT_OS_MACOS) # macOS
     message(STATUS "Configuring macOS installation targets...")
 
     set(MACOSX_BUNDLE_BUNDLE_PATH "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_DISPLAY_NAME}.app")
-    set(MACOSX_BUNDLE_ICON_FILE_NAME "qwertycoinz.icns")
+    set(MACOSX_BUNDLE_ICON_FILE_NAME "diamoneumz.icns")
 
     set_target_properties(
         ${TARGET_NAME}

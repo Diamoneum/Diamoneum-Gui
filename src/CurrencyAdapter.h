@@ -12,6 +12,9 @@
 
 namespace WalletGui {
 
+const char WALLET_CURRENCY_DISPLAY_NAME[] = "Diamoneum-Wallet";
+const char WALLET_CURRENCY_TICKER[] = "DIAM";
+
 class CurrencyAdapter {
 
 public:

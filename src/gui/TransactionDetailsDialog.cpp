@@ -16,7 +16,7 @@
 #include "ui_transactiondetailsdialog.h"
 
 using namespace CryptoNote;
-using namespace Qwertycoin;
+using namespace Diamoneum;
 
 namespace WalletGui {
 

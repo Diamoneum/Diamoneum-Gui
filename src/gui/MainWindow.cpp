@@ -135,7 +135,7 @@ void MainWindow::connectToSignals() {
 }
 
 void MainWindow::setMainWindowTitle() {
-  setWindowTitle(QString(tr("Qwertycoin Wallet %1")).arg(Settings::instance().getVersion()));
+  setWindowTitle(QString(tr("Diamoneum Wallet %1")).arg(Settings::instance().getVersion()));
 }
 void MainWindow::initUi() {
   setMainWindowTitle();
@@ -672,7 +672,7 @@ void MainWindow::DisplayCmdLineHelp() {
     QMessageBox *msg = new QMessageBox(QMessageBox::Information, QObject::tr("Help"),
                        cmdLineParser.getHelpText(),
                        QMessageBox::Ok, this);
-    msg->setInformativeText(tr("More info can be found at www.qwertycoin.org in Documentation section"));
+    msg->setInformativeText(tr("More info can be found at www.Diamoneum.xyz in Documentation section"));
     QFont font = QFontDatabase::systemFont(QFontDatabase::FixedFont);
     msg->setFont(font);
     QSpacerItem* horizontalSpacer = new QSpacerItem(650, 0, QSizePolicy::Minimum, QSizePolicy::Expanding);
@@ -976,7 +976,7 @@ void MainWindow::walletOpened(bool _error, const QString& _error_text) {
       action->setEnabled(true);
     }
 
-    setWindowTitle(QString(tr("%1 - Qwertycoin Wallet %2")).arg(Settings::instance().getWalletFile()).arg(Settings::instance().getVersion()));
+    setWindowTitle(QString(tr("%1 - Diamoneum Wallet %2")).arg(Settings::instance().getWalletFile()).arg(Settings::instance().getVersion()));
 
     m_ui->m_overviewAction->trigger();
     accountWidget->setVisible(true);
@@ -1023,7 +1023,7 @@ void MainWindow::walletClosed() {
   m_trackingModeIconLabel->hide();
   m_synchronizationStateIconLabel->hide();
 
-  setWindowTitle(QString(tr("Qwertycoin Wallet %2")).arg(Settings::instance().getVersion()));
+  setWindowTitle(QString(tr("Diamoneum Wallet %2")).arg(Settings::instance().getVersion()));
 
   QList<QAction*> tabActions = m_tabActionGroup->actions();
   Q_FOREACH(auto action, tabActions) {
@@ -1055,7 +1055,7 @@ void MainWindow::createTrayIcon()
 {
 #ifdef Q_OS_WIN
     m_trayIcon = new QSystemTrayIcon(QPixmap(":images/cryptonote"), this);
-    QString toolTip = QString(tr("Qwertycoin Wallet %1")).arg(Settings::instance().getVersion());
+    QString toolTip = QString(tr("Diamoneum Wallet %1")).arg(Settings::instance().getVersion());
     m_trayIcon->setToolTip(toolTip);
     m_trayIcon->show();
 #endif

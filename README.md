@@ -1,4 +1,4 @@
-![image](https://cdn.qwertycoin.org/images/press/other/qwc-github-3.png)
+![image](https://github.com/Diamoneum/Resources/blob/main/Images/Diam-Logo.png?raw=true)
 #### Master Build Status
 [![Build Status](https://travis-ci.org/qwertycoin-org/qwertycoin-gui.svg?branch=master)](https://travis-ci.org/qwertycoin-org/qwertycoin-gui)
 [![Build status](https://ci.appveyor.com/api/projects/status/udpsj8mf5x7s1rt6/branch/master?svg=true)](https://ci.appveyor.com/project/Qwertycoin/qwertycoin-gui/branch/master)
@@ -9,34 +9,34 @@
 
 # Table of contents
 1. [Project Specs](#coinspecs)
-2. [How to Compile Qwertycoin](#howtocompile)
-    1. [Qwertycoin for Linux](#build-linux)
-    2. [Qwertycoin for Windows](#build-windows)
-    3. [Qwertycoin for macOS](#build-apple)
+2. [How to Compile Diamoneum](#howtocompile)
+    1. [Diamoneum for Linux](#build-linux)
+    2. [Diamoneum for Windows](#build-windows)
+    3. [Diamoneum for macOS](#build-apple)
 3. [Downloads](#downloads)
 4. [Useful Links](#usefullinks)
 5. [Donate & Thanks](#donate)
 6. [Copyright / License](#copypasta)
 
 ## Installing <a name="installing"></a>
-We offer binary images of the latest releases here: https://releases.qwertycoin.org
+We offer binary images of the latest releases here: https://diamoneum.xyz/Downloads
 
 If you would like to compile yourself, read on.
 
 ### Coin Specs <a name="coinspecs"></a>
 <table>
-<tr><td>Ticker Symbol</td><td>QWC</td></tr>
+<tr><td>Ticker Symbol</td><td>DIAM</td></tr>
 <tr><td>Algorithm</td><td>Cryptonight</td></tr>
 <tr><td>Type</td><td>Proof of Work (PoW)</td></tr>
 <tr><td>Block Time</td><td>120 Seconds</td></tr>
 <tr><td>Premine</td><td>0.0 %</td></tr>
 <tr><td>Decimals</td><td>8 Digits</td></tr>
 <tr><td>Block Reward</td><td>Decrease by each block</td></tr>
-<tr><td>Max Coin Supply </td><td>184,467,440,737 QWC</td></tr>
-<tr><td>P2P | RPC Port</td><td>8196 | 8197</td></tr>
+<tr><td>Max Coin Supply </td><td>750,000,000 DIAM</td></tr>
+<tr><td>P2P | RPC Port</td><td>57575 | 57576</td></tr>
 </table>
 
-More information at [qwertycoin.org](https://qwertycoin.org/)
+More information at [Diamoneum.xyz](https://Diamoneum.xyz/)
 
 # How To Compile <a name="howtocompile"></a>
 
@@ -54,8 +54,8 @@ sudo apt-get install build-essential python-dev gcc g++ git cmake libboost-all-d
 
 - After installing dependencies run simple script:
 ```
-git clone --recurse-submodules https://github.com/qwertycoin-org/qwertycoin-gui
-cd ./qwertycoin-gui
+git clone --recurse-submodules https://github.com/Diamoneum/Diamoneum-Gui
+cd ./Diamoneum-Gui
 mkdir ./build
 cd ./build
 cmake -DBUILD_ALL:BOOL=TRUE ..
@@ -76,8 +76,8 @@ cmake --build . --config Release
 - From the start menu, open "x64 Native Tools Command Prompt for vs2017";
 - And the run the following commands:
 ```
-git clone --recurse-submodules https://github.com/qwertycoin-org/qwertycoin-gui
-cd qwertycoin-gui
+git clone --recurse-submodules https://github.com/Diamoneum/Diamoneum-Gui
+cd Diamoneum-Gui
 md build
 cd build
 cmake -G "Visual Studio 15 2017 Win64" -DBUILD_ALL:BOOL=TRUE ..
@@ -98,8 +98,8 @@ cmake --build . --config Release
 
 - After installing dependencies run simple script:
 ```
-git clone --recurse-submodules https://github.com/qwertycoin-org/qwertycoin-gui
-cd ./qwertycoin-gui
+git clone --recurse-submodules https://github.com/Diamoneum/Diamoneum-Gui
+cd ./Diamoneum-Gui
 mkdir ./build
 cd ./build
 cmake -DBUILD_ALL:BOOL=TRUE ..

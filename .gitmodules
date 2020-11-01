@@ -1,3 +1,6 @@
 [submodule "cmake/polly"]
 	path = cmake/polly
 	url = https://github.com/ruslo/polly.git
+[submodule "cryptonote"]
+	path = cryptonote
+	url = https://github.com/Diamoneum/Diamoneum.git

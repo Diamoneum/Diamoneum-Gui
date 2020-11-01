@@ -1,19 +1,19 @@
-# Qwertycoin
+# Diamoneum
 
-set(Qwertycoin_CMAKE_ARGS
+set(Diamoneum_CMAKE_ARGS
     -DCMAKE_INSTALL_PREFIX:PATH=<INSTALL_DIR>
     -DBUILD_ALL:BOOL=FALSE) # Only libraries are required!
 
 if(CMAKE_TOOLCHAIN_FILE)
-    list(INSERT Qwertycoin_CMAKE_ARGS 0 -DCMAKE_TOOLCHAIN_FILE=${CMAKE_TOOLCHAIN_FILE})
+    list(INSERT Diamoneum_CMAKE_ARGS 0 -DCMAKE_TOOLCHAIN_FILE=${CMAKE_TOOLCHAIN_FILE})
 endif()
 
 if(NOT WIN32)
-    list(INSERT Qwertycoin_CMAKE_ARGS 0 -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE})
+    list(INSERT Diamoneum_CMAKE_ARGS 0 -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE})
 endif()
 
-ExternalProject_Add(Qwertycoin
-    GIT_REPOSITORY https://github.com/qwertycoin-org/qwertycoin.git
+ExternalProject_Add(Diamoneum
+    GIT_REPOSITORY https://github.com/Diamoneum/Diamoneum.git
     GIT_TAG master
     GIT_SHALLOW ON
     GIT_PROGRESS OFF
@@ -21,7 +21,7 @@ ExternalProject_Add(Qwertycoin
     UPDATE_COMMAND ""
     PATCH_COMMAND ""
 
-    CMAKE_ARGS ${Qwertycoin_CMAKE_ARGS}
+    CMAKE_ARGS ${Diamoneum_CMAKE_ARGS}
 
     # CONFIGURE_COMMAND (use default)
     BUILD_COMMAND ${CMAKE_COMMAND} --build . --config ${CMAKE_BUILD_TYPE} --target QwertycoinFramework
@@ -30,8 +30,8 @@ ExternalProject_Add(Qwertycoin
     INSTALL_COMMAND ""
 )
 
-ExternalProject_Get_property(Qwertycoin SOURCE_DIR)
-ExternalProject_Get_property(Qwertycoin BINARY_DIR)
+ExternalProject_Get_property(Diamoneum SOURCE_DIR)
+ExternalProject_Get_property(Diamoneum BINARY_DIR)
 
 set(QwertycoinFramework_INCLUDE_DIRS
     "${SOURCE_DIR}/include"

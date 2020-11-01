@@ -1,0 +1,24 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Diamoneum
+GenericName=Diamoneum wallet
+Name[uk]=Diamoneum
+Name[ru]=Diamoneum
+Name[pl]=Diamoneum
+Name[be]=Diamoneum
+Name[de]=Diamoneum
+Name[es]=Diamoneum
+Comment=Diamoneum wallet
+Comment[uk]=Diamoneum wallet
+Comment[ru]=Diamoneum wallet
+Comment[pl]=Diamoneum wallet
+Comment[be]=Diamoneum wallet
+Comment[de]=Diamoneum Brieftasche
+Comment[es]=Diamoneum Monedero
+Exec=Diamoneum %U
+Terminal=false
+Type=Application
+Icon=diamoneum
+MimeType=x-scheme-handler/diamoneum;
+Categories=Office;Finance;
+Version=5.2.2

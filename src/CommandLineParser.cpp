@@ -29,7 +29,7 @@ CommandLineParser::CommandLineParser(QObject* _parent) : QObject(_parent), m_par
   m_dataDirOption("data-dir", tr("Specify data directory"), tr("directory"), QString::fromLocal8Bit(Tools::getDefaultDataDirectory().c_str())),
   m_rollBackOption("rollback", tr("Rollback to height"), tr("height"), QString::number(std::numeric_limits<uint32_t>::max())),
   m_minimized("minimized", tr("Run application in minimized mode")) {
-  m_parser.setApplicationDescription(tr("Qwertycoin wallet"));
+  m_parser.setApplicationDescription(tr("Diamoneum wallet"));
   m_parser.addHelpOption();
   m_parser.addVersionOption();
   m_parser.addOption(m_testnetOption);

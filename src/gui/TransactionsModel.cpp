@@ -18,7 +18,7 @@
 #include "AddressBookModel.h"
 #include "WalletAdapter.h"
 
-using namespace Qwertycoin;
+using namespace Diamoneum;
 
 namespace WalletGui {
 
