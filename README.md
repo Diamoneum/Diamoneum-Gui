@@ -110,22 +110,19 @@ cmake --build . --config Release
 ## Donate <a name="donate"></a>
 
 ```
-QWC: QWC1K6XEhCC1WsZzT9RRVpc1MLXXdHVKt2BUGSrsmkkXAvqh52sVnNc1pYmoF2TEXsAvZnyPaZu8MW3S8EWHNfAh7X2xa63P7Y
+DIAM: diamowieNXVVxGW2GbJERHgawnfvWokZ6bHnzYC2w67KMyV1BiT9Aux6JzY1wg4HmJHMoYJQdyj5LHKKEsFP2FBsA5aimMoQ46
 ```
 ```
-BTC: 1DkocMNiqFkbjhCmG4sg9zYQbi4YuguFWw
+BTC: 16GLbf566NGF3893gZmB9hY4HiaNbh3GVe
 ```
 ```
-ETH: 0xA660Fb28C06542258bd740973c17F2632dff2517
+ETH: 0xA6792e1704d2A77A15d504c98e006bc7d939Ee0b
 ```
 ```
-BCH: qz975ndvcechzywtz59xpkt2hhdzkzt3vvt8762yk9
+XMR: 83LixYjeNejZFiGzDWRoLS6qjbtHUxLJUHh9KwsmWsiqPi3tu8qcP7w2veX3xm3c7t6AVgy3m7EKXSugmt3VxhLRGdAjpE4
 ```
 ```
-XMR: 47gmN4GMQ17Veur5YEpru7eCQc5A65DaWUThZa9z9bP6jNMYXPKAyjDcAW4RzNYbRChEwnKu1H3qt9FPW9CnpwZgNscKawX
-```
-```
-ETN: etnkJXJFqiH9FCt6Gq2HWHPeY92YFsmvKX7qaysvnV11M796Xmovo2nSu6EUCMnniqRqAhKX9AQp31GbG3M2DiVM3qRDSQ5Vwq
+ETN: etnjzZn6KVHHgZf7MDrcYcCg7tVuKN1vYSqjQoYD4sF1hGnGMK5FKtc4TH5ytggf4q2L19kEfxQtKMx21fxhqEyiA97Nzurpkk
 ```
 
 ### Downloads <a name="downloads"></a>
