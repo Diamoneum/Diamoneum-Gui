@@ -1,11 +1,11 @@
 ![image](https://github.com/Diamoneum/Resources/blob/main/Images/Diam-Logo.png?raw=true)
 #### Master Build Status
-[![Build Status](https://travis-ci.org/qwertycoin-org/qwertycoin-gui.svg?branch=master)](https://travis-ci.org/qwertycoin-org/qwertycoin-gui)
-[![Build status](https://ci.appveyor.com/api/projects/status/udpsj8mf5x7s1rt6/branch/master?svg=true)](https://ci.appveyor.com/project/Qwertycoin/qwertycoin-gui/branch/master)
+[![Build Status](https://travis-ci.org/Diamoneum/Diamoneum-Gui.svg?branch=master)](https://travis-ci.org/Diamoneum/Diamoneum-Gui)
+[![Build status](https://ci.appveyor.com/api/projects/status/udpsj8mf5x7s1rt6/branch/master?svg=true)](https://ci.appveyor.com/project/Diamoneum/Diamoneum-Gui/branch/master)
 
 
 #### Development Build Status
-[![Build Status](https://travis-ci.org/qwertycoin-org/qwertycoin-gui.svg?branch=dev)](https://travis-ci.org/qwertycoin-org/qwertycoin-gui) [![Build status](https://ci.appveyor.com/api/projects/status/udpsj8mf5x7s1rt6/branch/dev?svg=true)](https://ci.appveyor.com/project/Qwertycoin/qwertycoin-gui/branch/dev)
+[![Build Status](https://travis-ci.org/qwertycoin-org/qwertycoin-gui.svg?branch=dev)](https://travis-ci.org/Diamoneum/Diamoneum-Gui) [![Build status](https://ci.appveyor.com/api/projects/status/udpsj8mf5x7s1rt6/branch/dev?svg=true)](https://ci.appveyor.com/project/Diamoneum/Diamoneum-Gui/branch/dev)
 
 # Table of contents
 1. [Project Specs](#coinspecs)
@@ -44,7 +44,7 @@ More information at [Diamoneum.xyz](https://Diamoneum.xyz/)
 
 ##### Prerequisites
 
-- You will need the following packages: build-essential, [cmake (3.10 or higher)](https://github.com/qwertycoin-org/qwertycoin/wiki/E01.-Install-Cmake-3.10) and git;
+- You will need the following packages: build-essential, [cmake (3.10 or higher)](https://github.com/Diamoneum/Diamoneum/wiki/E01.-Install-Cmake-3.10) and git;
 - Most of these should already be installed on your system. For example on Ubuntu by running:
 ```
 sudo apt-get install build-essential python-dev gcc g++ git cmake libboost-all-dev qtbase5-dev
@@ -131,40 +131,40 @@ ETN: etnkJXJFqiH9FCt6Gq2HWHPeY92YFsmvKX7qaysvnV11M796Xmovo2nSu6EUCMnniqRqAhKX9AQ
 ### Downloads <a name="downloads"></a>
 | Operating System | Download                                 |
 | ---------------- | ---------------------------------------- |
-| Windows 32       | https://releases.qwertycoin.org/get/gui/latest/win32 |
-| Windows 64       | https://releases.qwertycoin.org/get/gui/latest/win64 |
-| macOS 10.8 & Later | https://releases.qwertycoin.org/get/gui/latest/macos |
-| Linux DEB         | https://releases.qwertycoin.org/get/gui/latest/linux/deb |
-| Linux RPM     | https://releases.qwertycoin.org/get/gui/latest/linux/rpm |
-| Other platforms      | https://releases.qwertycoin.org |
+| Windows 32       | https://releases.diamoneum.xyz/get/gui/latest/win32 |
+| Windows 64       | https://releases.diamoneum.xyz/get/gui/latest/win64 |
+| macOS 10.8 & Later | https://releases.diamoneum.xyz/get/gui/latest/macos |
+| Linux DEB         | https://releases.diamoneum.xyz/get/gui/latest/linux/deb |
+| Linux RPM     | https://releases.diamoneum.xyz/get/gui/latest/linux/rpm |
+| Other platforms      | https://releases.diamoneum.xyz |
 
 ### Useful Links <a name="usefullinks"></a>
 <table>
-<tr><td>Website</td><td>https://qwertycoin.org</td></tr>
-<tr><td>Bitcointalk ANN</td><td>https://bitcointalk.org/index.php?topic=2881418.0</td></tr>
-<tr><td>Explorer</td><td>https://explorer.qwertycoin.org</td></tr>
-<tr><td>Pool Explorer</td><td>https://explorer.qwertycoin.org/#network</td></tr>
-<tr><td>Node Map</td><td>https://nodes.qwertycoin.org</td></tr>
-<tr><td>Wallets</td><td>https://releases.qwertycoin.org</td></tr>
-<tr><td>Web Wallet</td><td>https://myqwertycoin.com</td></tr>
-<tr><td>Masternode Setup</td><td>https://github.com/qwertycoin-org/qwertycoin/wiki</td></tr>
+<tr><td>Website</td><td>https://diamoneum.xyz</td></tr>
+<tr><td>Bitcointalk ANN</td><td>Coming Soon!</td></tr>
+<tr><td>Explorer</td><td>https://explorer.diamoneum.xyz</td></tr>
+<tr><td>Pool Explorer</td><td>https://explorer.diamoneum.xyz/#network</td></tr>
+<tr><td>Node Map</td><td>https://nodes.diamoneum.xyz</td></tr>
+<tr><td>Wallets</td><td>https://releases.diamoneum.xyz</td></tr>
+<tr><td>Web Wallet</td><td>https://wallet.diamoneum.xyz</td></tr>
+<tr><td>Masternode Setup</td><td>https://github.com/Diamoneum/Diamoneum/wiki</td></tr>
 <tr><td>Blockfolio</td><td>https://blockfolio.com/#get-app</td></tr>
-<tr><td>CoinGecko</td><td>https://www.coingecko.com/en/coins/qwertycoin</td></tr>
+<tr><td>CoinGecko</td><td>Coming Soon!</td></tr>
 <tr><td>Delta</td><td>https://delta.app</td></tr>
-<tr><td>Discord</td><td>https://qwertycoin.org/discord</td></tr>
-<tr><td>Twitter</td><td>https://twitter.com/Qwertycoin_QWC</td></tr>
+<tr><td>Discord</td><td>https://discord.gg/YVwYZ6Z</td></tr>
+<tr><td>Facebook</td><td>https://www.facebook.com/Diamoneum.Diam</td></tr>
 </table>
 
 #### Thanks <a name="thanks"></a>
 
-Cryptonote Developers, Bytecoin Developers, Monero Developers, Karbo Developers, The Qwertycoin Community
+Cryptonote Developers, Bytecoin Developers, Monero Developers, Karbo Developers, The Qwertycoin Community, The Diamoneum community
 
 ### Copypasta for license when editing files  <a name="copypasta"></a>
 
-Hi Qwertycoin contributor, thanks for forking and sending back Pull Requests. Extensive docs about contributing are in the works or elsewhere. For now this is the bit we need to get into all the files we touch. Please add it to the top of the files, see [lib/Global/CryptoNoteConfig.h](https://github.com/qwertycoin-org/qwertycoin/blob/master/lib/Global/CryptoNoteConfig.h) for an example.
+Hi Diamoneum contributor, thanks for forking and sending back Pull Requests. Extensive docs about contributing are in the works or elsewhere. For now this is the bit we need to get into all the files we touch. Please add it to the top of the files, see [lib/Global/CryptoNoteConfig.h](https://github.com/Diamoneum/Diamoneum/blob/master/lib/Global/CryptoNoteConfig.h) for an example.
 
 ```
-// Copyright (c) 2018-2019, The Qwertycoin Developers
+// Copyright (c) 2018-2019, The Diamoneum Developers
 //
 // Please see the included LICENSE file for more information.
 ```
